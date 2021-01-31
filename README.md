@@ -8,7 +8,7 @@ First step : Clone this url.\
 Second step : run npm install command.\
 Thid step: run npm start or ng serve command.
 
-## If you want to watch video in Youtube then open below url
+## If you want to watch a video in Youtube then open below url
 Part - 1 : `https://youtu.be/DzBNN1ntLgQ`\
 Part - 2 : `https://youtu.be/t_JU2EPRJB8`\
 Part - 3 : `https://youtu.be/khha6DRBDM0`
