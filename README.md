@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-# How to run this code
+## How to run this code
 
-First step : Clone this url 
-Second step : run npm install command
-Thid step: run npm run or ng serve command
+First step : Clone this url.
+Second step : run npm install command.
+Thid step: run npm run or ng serve command.
 
 ## Development server
 
