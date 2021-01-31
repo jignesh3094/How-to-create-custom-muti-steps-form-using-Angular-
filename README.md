@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 First step : Clone this url.\
 Second step : run npm install command.\
-Thid step: run npm start or ng serve command.
+Third step: run npm start or ng serve command.
 
 ## If you want to watch a video in Youtube then open below url
 Part - 1 : `https://youtu.be/DzBNN1ntLgQ`\
