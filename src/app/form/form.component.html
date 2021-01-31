@@ -1,0 +1,80 @@
+<div class="container tb-10">
+  <form (ngSubmit)="submit()" [formGroup]="multistep">
+    <div *ngIf="step == 1" formGroupName="userDetails">
+      <h4>User Details</h4>
+      <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+        <input type="text" class="form-control" formControlName="fname"  id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="First Name">
+      <span class="text-danger" *ngIf="submitted && userDetails.fname.errors?.required">Please enter your first name</span>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Last Name</label>
+        <input type="text" class="form-control" formControlName="lname" id="exampleInputPassword1" placeholder="Last Name">
+      </div>
+    </div>
+    <div *ngIf="step == 2" formGroupName="contactDetails">
+
+      <h4>Contact Details</h4>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="text" class="form-control" formControlName="email"  id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Email">
+          <span class="text-danger" *ngIf="submitted && contactDetails.email.errors?.required">Please enter your email</span>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contact Number</label>
+        <input type="text" class="form-control" formControlName="contactNumber" id="exampleInputPassword1" placeholder="Contact Number" name="contact">
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Address</label>
+        <textarea class="form-control" formControlName="address" id="exampleInputPassword1" placeholder="Address"></textarea>
+
+      </div>
+    </div>
+    <div *ngIf="step == 3" formGroupName="personalDetails">
+      <h4>Personal Details</h4>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Gender</label>
+        <select class="form-control" formControlName="gender">
+          <option value="null">Select Ony One</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+       
+        <div class="form-check form-check-inline">
+          Education
+        </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="education" id="inlineRadio1" value="SSC">
+              <label class="form-check-label" for="inlineRadio1">SSC</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="education" id="inlineRadio2" value="HSC">
+              <label class="form-check-label" for="inlineRadio2">HSC</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="education" id="inlineRadio3" value="Graduate">
+              <label class="form-check-label" for="inlineRadio3">Graduate</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="education" id="inlineRadio3" value="Post Graduate">
+              <label class="form-check-label" for="inlineRadio3">Post Graduate</label>
+            </div>
+
+      </div>
+
+    </div>
+    <a class="btn btn-primary mx-2" *ngIf="step != 1" (click)="previous()">Previous</a>
+    <button type="submit" class="btn btn-primary mx-2" *ngIf="step != 3">Next</button>
+    <button type="submit" class="btn btn-primary mx-2" *ngIf="step == 3">Submit</button>
+    <br>
+    <pre>{{multistep.value | json}}</pre>
+  </form>
+</div>
