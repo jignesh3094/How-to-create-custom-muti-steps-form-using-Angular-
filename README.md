@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 First step : Clone this url.\
 Second step : run npm install command.\
-Thid step: run npm run or ng serve command.\
+Thid step: run npm run or ng serve command.
 
 ## Development server
 
