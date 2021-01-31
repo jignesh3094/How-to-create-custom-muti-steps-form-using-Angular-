@@ -13,9 +13,6 @@ Part - 1 : `https://youtu.be/DzBNN1ntLgQ`\
 Part - 2 : `https://youtu.be/t_JU2EPRJB8`\
 Part - 3 : `https://youtu.be/khha6DRBDM0`
 
-First step : Clone this url.\
-Second step : run npm install command.\
-Thid step: run npm start or ng serve command.
 
 ## Development server
 
