@@ -53,6 +53,7 @@ export class FormComponent implements OnInit {
   }
 
   previous() {
+    console.log('steps',this.step);
     this.step = this.step - 1;
   }
 
